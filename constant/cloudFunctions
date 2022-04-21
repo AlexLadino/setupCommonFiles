@@ -1,0 +1,32 @@
+    
+	voidFraction1
+    {
+		// Creates particle void fraction field on carrier phase
+        type            voidFraction;
+    }
+
+    /*
+    patchInteractionFields1  // para deposicion
+    { 
+		// Creates volume fields whose boundaries are used to store patch interaction statistics:  
+		// <cloud><model>:count - cumulative particle hits 
+		// <cloud><model>:mass - cumulative mass of hitting particles 
+		type            patchInteractionFields; 
+		// resetMode       writeTime; // none; timeStep; 
+    } 
+    */
+	/*
+    facePostProcessing1 // para modulacion turbulencia
+    {
+	// Cumulative mass and mass flow rate of particles crossing a faceZoneSet 
+	// need to define the faceZone via topoSet. Eulerian 
+        type            facePostProcessing; 
+        surfaceFormat   vtk; 
+        resetOnWrite    no; 
+        log             yes; 
+        faceZones 
+        ( 
+            plano 
+        ); 
+    }
+	*/
