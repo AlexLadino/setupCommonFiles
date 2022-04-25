@@ -76,16 +76,6 @@ functions
 {
       // Para que los cambian en tiempo de ejecucion se hagan se debe modificar
       // en los includes y luego modificar con espacio y guardar el controlDict
-	#include "secondaryFields1"  
-	#include "fieldAverage1"
-	#include "monitorProbes1"
-	#include "monitorSamples1"
-	#include "monitorSurfaces1"	
-	#include "monitorSamplesTKEConvectionTransportVP"	
-	#include "monitorSamplesTKEViscDissipationTransportTurb"
-	#include "monitorForces1"
-      #include "integralDissipation1"
-      
       tracks1 
       { 
             type    		icoUncoupledKinematicCloud; 
@@ -128,4 +118,15 @@ functions
             libs    		("liblagrangianFunctionObjects.so"); 
             kinematicCloud 	kinematicCloud7; 
       }
+	#include "secondaryFields1"  
+	#include "fieldAverage1"
+	#include "monitorProbes1"
+	#include "monitorSamples1"
+	#include "monitorSurfaces1"	
+	#include "monitorSamplesTKEConvectionTransportVP"	
+	#include "monitorSamplesTKEViscDissipationTransportTurb"
+	#include "monitorForces1"
+      #include "integralDissipation1"
+      
+
 }
