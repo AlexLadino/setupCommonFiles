@@ -25,25 +25,25 @@
                               base		time;
                         }				
                         // TKE budgets  ------------------- 
-                        convection
+                        convectionTKE
                         {
                               mean		on;
                               prime2Mean	off;
                               base		time;
                         }				
-                        viscousDissipation
+                        dissipationTKE
                         {
                               mean		on;
                               prime2Mean	off;
                               base		time;
                         }
-                        transportVelocityPressureField
+                        pressureDiffusionTKEField
                         {
                               mean		on;
                               prime2Mean	off;
                               base		time;
                         }
-                        transportTurbulenceField
+                        turbulenceTransportTKEField
                         {
                               mean		on;
                               prime2Mean	off;
